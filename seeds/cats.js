@@ -5,9 +5,9 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       return Promise.all([
         // Inserts seed entries
-        knex('cats').insert({id: 1, name: 'garfield', lives: 9, lifeStory: 'i love lasagne'}),
-        knex('cats').insert({id: 2, name: 'mr cat', lives: 2, lifeStory: 'i like rock n roll'}),
-        knex('cats').insert({id: 3, name: 'dorothy', lives: 7, lifeStory: 'i live in the rubbish bin'})
+        knex('cats').insert({id: 1, Name: 'Garfield', lives: 9, lifeStory: 'I love lasagne'}),
+        knex('cats').insert({id: 2, Name: 'Mr Cat', lives: 2, lifeStory: 'I like rock n roll'}),
+        knex('cats').insert({id: 3, Name: 'Dorothy', lives: 7, lifeStory: 'I live in the rubbish bin'})
       ]);
     });
 };
