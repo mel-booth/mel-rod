@@ -28,6 +28,10 @@ app.use('/cats', cats);
 app.get('/cats/new', function(req, res){
   res.render('catsNew')
 })
+
+app.get('/cats/:id/edit', function(req, res){
+  res.render('catsEdit')
+})
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
